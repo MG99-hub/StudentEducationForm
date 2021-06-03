@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <form action="" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Person Details</legend>
+        <label for="fname">First-Name</label>
+        <input type="text" id="fname" name="fname" placeholder="First-Name" maxlength="8" required><br><br>
+        <label for="lname">Last-Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Last-Name" maxlength="8" required><br><br>
+        <label for="mail">E-mail</label>
+        <input type="email" id="mail" name="mail" placeholder="xyz@gmail.com" required><br><br>
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" placeholder="password" maxlength="10" required><br><br>
+        <label for="edu">Education</label>
+        <select name="eduaction" id="edu" style="float: right;" placeholder="Seleccct">
+            <option value="Select">Select</option>
+            <option value="B.E">B.E</option>
+            <option value="M.E">M.E</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+        </select><br><br>
+        <label for="yop">Y.O.P</label>
+        <input type="number" id="yop" name="yop" placeholder="Year" min="2015" max="2021" required><br><br>
+        <label style="margin-right: 20px;">Gender</label>
+        <input type="radio" name="gender" style="float: none; margin-left: 120px;" required>Male
+        <input type="radio" name="gender" style="float: none;" required>Female<br><br>
+        <label for="place">Place</label>
+        <input list="place" name="place" placeholder="Select" required><br><br>
+        <datalist id="place">
+            <option value="AndhraPradesh"></option>
+            <option value="Assam"></option>
+            <option value="Goa"></option>
+            <option value="Karnataka"></option>
+            <option value="Maharastra"></option>
+            <option value="Punjab"></option>
+            <option value="TamilNadu"></option>
+        </datalist>
+        <label style="background-color: turquoise;">COURSE</label>
+        <input type="text" value="Full-Stack-Development" style="background-color:hotpink;" readonly><br><br>
+        <input type="checkbox" name="sub1" style="float:none">Java<br>
+        <input type="checkbox" name="sub2" style="float: none;">J2EE<br>
+        <input type="checkbox" name="sub3" style="float: none;">Hibernate<br>
+        <input type="checkbox" name="sub4" style="float: none;">Spring<br>
+        <input type="checkbox" name="sub5" style="float: none;">Programming<br>
+        <input type="checkbox" name="sub6" style="float: none;">MultiThreading<br>
+        <input type="checkbox" none="sub7" style="float:none">DataStructures<br><br>
+        <label for="commonsubjects" style="background-color:yellow;">Common-Subjects</label><br><br>
+        <input type="checkbox" name="c1" style="float: none;" checked>SQL<br>
+        <input type="checkbox" name="c1" style="float: none;" checked>HTML<br>
+        <input type="checkbox" name="c2" style="float: none;" checked>CSS<br>
+        <input type="checkbox" name="c3" style="float: none;" checked>JAVA-SCRIPT<br><br>
+        <input style="float: none; margin-left: 40%;" id="a" type="Submit"> 
+        </fieldset>
+    </form>
+</body>
+</html>
